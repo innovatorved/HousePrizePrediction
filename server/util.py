@@ -24,7 +24,7 @@ def get_estimated_price(location, sqft, bhk, bath):
 
 
 def load_saved_artifacts():
-    print("loading saved artifacts...start")
+    print("Loading Data and Model")
     global __data_columns
     global __locations
 
@@ -34,9 +34,8 @@ def load_saved_artifacts():
 
     global __model
     if __model is None:
-        with open("./trainendData/banglore_home_prices_model.pickle", "rb") as f:
+        with open("./trainendData/model.pickle", "rb") as f:
             __model = pickle.load(f)
-    print("loading saved artifacts...done")
 
 
 def get_location_names():

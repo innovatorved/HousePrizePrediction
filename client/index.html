@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>House Price Prediction</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="index.js"></script>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div class="flex items-center justify-center h-screen">
+		<div class="flex justify-center m-6">
+			<div class="flex flex-col md:flex-row md:max-w-4xl rounded-lg bg-white shadow-lg">
+				<img class=" w-full h-96 md:h-auto object-cover md:w-10/12 rounded-t-lg md:rounded-none md:rounded-l-lg"
+					src="https://images.adsttc.com/media/images/5c49/0f33/284d/d13e/b300/00a4/slideshow/-_Featuded_Image.jpg?1548291884"
+					alt="" />
+				<div class="w-full max-w-xs flex flex-col justify-start">
+					<form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+						<div class="mb-4">
+							<label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+								Area (Square Feet)
+							</label>
+							<input
+								class="area shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+								type="text" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
+						</div>
+						<div class="mb-4">
+							<h2 class="block text-gray-700 text-sm font-bold mb-2">BHK</h2>
+							<div class="flex justify-center switch-field">
+								<div class="form-check form-check-inline">
+									<input
+										class="form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+										type="radio" name="uiBHK" id="radio-bhk-1" value="1">
+									<label class="form-check-label inline-block text-gray-800"
+										for="radio-bhk-1">1</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input
+										class="form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+										type="radio" name="uiBHK" id="radio-bhk-2" value="2">
+									<label class="form-check-label inline-block text-gray-800"
+										for="radio-bhk-2">2</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input
+										class="form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+										type="radio" name="uiBHK" id="radio-bhk-3" value="3">
+									<label class="form-check-label inline-block text-gray-800"
+										for="radio-bhk-3">3</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input
+										class="form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+										type="radio" name="uiBHK" id="radio-bhk-4" value="4">
+									<label class="form-check-label inline-block text-gray-800"
+										for="radio-bhk-4">4</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input
+										class="form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+										type="radio" name="uiBHK" id="radio-bhk-5" value="5">
+									<label class="form-check-label inline-block text-gray-800"
+										for="radio-bhk-5">5</label>
+								</div>
+							</div>
+						</div>
+						<div class="mb-4">
+							<h2 class="block text-gray-700 text-sm font-bold mb-2">Bath</h2>
+							<div class="flex justify-center switch-field">
+								<div class="form-check form-check-inline">
+									<input
+										class="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+										type="radio" name="uiBathrooms" id="radio-bath-1" value="1">
+									<label class="form-check-label inline-block text-gray-800"
+										for="radio-bath-1">1</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input
+										class="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+										type="radio" name="uiBathrooms" id="radio-bath-2" value="2">
+									<label class="form-check-label inline-block text-gray-800"
+										for="radio-bath-2">2</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input
+										class="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+										type="radio" name="uiBathrooms" id="radio-bath-3" value="3">
+									<label class="form-check-label inline-block text-gray-800"
+										for="radio-bath-3">3</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input
+										class="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+										type="radio" name="uiBathrooms" id="radio-bath-4" value="4">
+									<label class="form-check-label inline-block text-gray-800"
+										for="radio-bath-4">4</label>
+								</div>
+								<div class="form-check form-check-inline ">
+									<input
+										class="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+										type="radio" name="uiBathrooms" id="radio-bath-5" value="5">
+									<label class="form-check-label inline-block text-gray-800"
+										for="radio-bath-5">5</label>
+								</div>
+							</div>
+						</div>
+						<div class="mb-6">
+							<div class="inline-block relative w-64">
+								<label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+									Location
+								</label>
+								<label for="underline_select" class="sr-only">Underline select</label>
+								<select id="uiLocations"
+									class="location block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer">
+									<option value="" disabled="disabled" selected="selected">Choose a Location</option>
+									<option>Electronic City</option>
+									<option>Rajaji Nagar</option>
+								</select>
+								<div
+									class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+									<svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 20 20">
+										<path
+											d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="flex items-center justify-between">
+							<button onclick="onClickedEstimatePrice()"
+								class="submit bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+								type="button">
+								Estimate Price
+							</button>
+						</div>
+						<div id="uiEstimatedPrice" class="result">
+							<h2></h2>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</body>
+
+</html>

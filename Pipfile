@@ -10,6 +10,7 @@ pandas = "*"
 matplotlib = "*"
 sklearn = "*"
 scikit-learn = "*"
+flask-cors = "*"
 
 [dev-packages]
 

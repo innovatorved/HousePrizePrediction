@@ -1,4 +1,4 @@
-location,size,total_sqft,bath,price,bhk,price_per_sqft
+location,size,total_sqft,bath,price,BHK,price_per_sqft
 Electronic City Phase II,2 BHK,1056.0,2.0,39.07,2,3699.810606060606
 Chikka Tirupathi,4 Bedroom,2600.0,5.0,120.0,4,4615.384615384615
 Uttarahalli,3 BHK,1440.0,2.0,62.0,3,4305.555555555556
@@ -4637,7 +4637,6 @@ Sanjay nagar,3 BHK,1900.0,2.0,180.0,3,9473.684210526315
 Whitefield,3 BHK,2700.0,5.0,175.0,3,6481.481481481482
 BTM 2nd Stage,2 BHK,1070.0,2.0,48.0,2,4485.981308411215
 Ramamurthy Nagar,9 Bedroom,2000.0,9.0,150.0,9,7500.0
-Munnekollal,43 Bedroom,2400.0,40.0,660.0,43,27500.0
 Electronics City Phase 1,1 BHK,755.0,1.0,42.41,1,5617.218543046358
 Hebbal,3 BHK,1645.0,3.0,117.0,3,7112.462006079028
 Sarjapur,3 Bedroom,2400.0,3.0,190.0,3,7916.666666666667
